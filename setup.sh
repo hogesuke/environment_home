@@ -21,3 +21,15 @@ fc-cache -vf
 # zsh
 #
 chsh -s /usr/local/bin/zsh
+
+#
+# anyenv
+#
+git clone https://github.com/anyenv/anyenv ~/.anyenv
+echo $SHELL -l
+mkdir -p ~/.anyenv/plugins
+git clone https://github.com/znz/anyenv-update.git ~/.anyenv/plugins/anyenv-update
+anyenv install --force-init
+anyenv install rbenv
+anyenv install pyenv
+anyenv install nodenv
