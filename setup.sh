@@ -13,7 +13,6 @@ brew install git jq peco zsh colordiff coreutils
 # ricty
 brew tap sanemat/font
 brew install ricty --with-powerline
-
 cp -f /usr/local/opt/ricty/share/fonts/Ricty*.ttf ~/Library/Fonts/
 fc-cache -vf
 
@@ -21,6 +20,8 @@ fc-cache -vf
 # zsh
 #
 chsh -s /usr/local/bin/zsh
+git clone git@github.com:hogesuke/dotfiles_home.git ~/dotfiles_home
+bash ~/dotfiles_home/link.sh
 
 #
 # anyenv
