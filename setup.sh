@@ -8,7 +8,7 @@ set -eu
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 # basic
-brew install git hub jq peco zsh colordiff coreutils
+brew install git hub jq peco zsh colordiff coreutils openssl mysql
 
 # ricty
 brew tap sanemat/font
