@@ -33,7 +33,7 @@ chsh -s /usr/local/bin/zsh
 # anyenv
 #
 git clone https://github.com/anyenv/anyenv ~/.anyenv
-echo $SHELL -l
+exec $SHELL -l
 mkdir -p ~/.anyenv/plugins
 git clone https://github.com/znz/anyenv-update.git ~/.anyenv/plugins/anyenv-update
 anyenv install --force-init
