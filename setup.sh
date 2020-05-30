@@ -7,8 +7,11 @@ set -eu
 #
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
-# basic
-brew install git hub jq peco zsh colordiff coreutils openssl mysql
+# brew install
+brew install git hub jq peco zsh colordiff coreutils openssl mysql cask
+
+# cask install
+brew cask install visual-studio-code firefox dropbox alfred google-japanese-ime
 
 # ricty
 #
