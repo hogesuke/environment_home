@@ -24,8 +24,9 @@ brew install git hub jq peco zsh colordiff coreutils openssl mysql
 # zsh
 #
 chsh -s /usr/local/bin/zsh
-git clone git@github.com:hogesuke/dotfiles_home.git ~/dotfiles_home
-bash ~/dotfiles_home/link.sh
+# FIXME: プライベートリポジトリだから鍵をPCのローカルに置かないとgit cloneできない
+# git clone git@github.com:hogesuke/dotfiles_home.git ~/dotfiles_home
+# bash ~/dotfiles_home/link.sh
 
 #
 # anyenv
