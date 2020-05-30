@@ -26,7 +26,7 @@ brew install git hub jq peco zsh colordiff coreutils openssl mysql
 git clone https://github.com/anyenv/anyenv ~/.anyenv
 echo 'export PATH="$HOME/.anyenv/bin:$PATH"' >> ~/.bash_profile
 echo 'eval "$(anyenv init -)"' >> ~/.bash_profile
-exec $SHELL -l
+source ~/.bash_profile
 mkdir -p ~/.anyenv/plugins
 git clone https://github.com/znz/anyenv-update.git ~/.anyenv/plugins/anyenv-update
 anyenv install --force-init
