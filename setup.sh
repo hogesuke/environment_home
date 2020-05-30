@@ -21,18 +21,11 @@ brew install git hub jq peco zsh colordiff coreutils openssl mysql
 # fc-cache -vf
 
 #
-# zsh
-#
-echo "/usr/local/bin/zsh" | sudo tee -a /etc/shells
-chsh -s /usr/local/bin/zsh
-# FIXME: プライベートリポジトリだから鍵をPCのローカルに置かないとgit cloneできない
-# git clone git@github.com:hogesuke/dotfiles_home.git ~/dotfiles_home
-# bash ~/dotfiles_home/link.sh
-
-#
 # anyenv
 #
 git clone https://github.com/anyenv/anyenv ~/.anyenv
+echo 'export PATH="$HOME/.anyenv/bin:$PATH"' >> ~/.bash_profile
+echo 'eval "$(anyenv init -)"' >> ~/.bash_profile
 exec $SHELL -l
 mkdir -p ~/.anyenv/plugins
 git clone https://github.com/znz/anyenv-update.git ~/.anyenv/plugins/anyenv-update
@@ -40,3 +33,12 @@ anyenv install --force-init
 anyenv install rbenv
 anyenv install pyenv
 anyenv install nodenv
+
+#
+# zsh
+#
+echo "/usr/local/bin/zsh" | sudo tee -a /etc/shells
+chsh -s /usr/local/bin/zsh
+# FIXME: プライベートリポジトリだから鍵をPCのローカルに置かないとgit cloneできない
+# git clone git@github.com:hogesuke/dotfiles_home.git ~/dotfiles_home
+# bash ~/dotfiles_home/link.sh
