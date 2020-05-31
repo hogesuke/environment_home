@@ -56,7 +56,7 @@ defaults write -g com.apple.trackpad.scaling 2
 brew install git hub jq peco zsh colordiff coreutils openssl mysql cask
 
 # cask install
-brew cask install visual-studio-code firefox dropbox alfred google-japanese-ime karabiner-elements bartender
+brew cask install visual-studio-code firefox dropbox alfred google-japanese-ime karabiner-elements bartender docker
 
 # ricty
 #
