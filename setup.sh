@@ -3,9 +3,16 @@
 set -eu
 
 #
+# macOS settings
+#
+# 隠しファイルを表示
+defaults write com.apple.finder AppleShowAllFiles TRUE
+killall Finder
+
+#
 # brew
 #
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
 # brew install
 brew install git hub jq peco zsh colordiff coreutils openssl mysql cask
