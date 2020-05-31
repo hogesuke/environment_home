@@ -5,9 +5,47 @@ set -eu
 #
 # macOS settings
 #
+
+# Global
+
+# 拡張子を常に表示
+defaults write NSGlobalDomain AppleShowAllExtensions -bool true
+# 保存ダイアログを詳細設定で表示
+defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -boolean true
+
+# Finder
+
+# ステータスバーを表示
+defaults write com.apple.finder ShowStatusBar -bool true
+# パスバーを表示
+defaults write com.apple.finder ShowPathbar -bool true
 # 隠しファイルを表示
 defaults write com.apple.finder AppleShowAllFiles TRUE
 killall Finder
+
+# Menubar
+
+# バッテリーのパーセントを表示
+defaults write com.apple.menuextra.battery ShowPercent -string "YES"
+# 日付と時刻のフォーマット（24時間表示、秒表示あり、日付・曜日を表示）
+defaults write com.apple.menuextra.clock DateFormat -string "M\u6708d\u65e5(EEE)  H:mm:ss"
+
+# Dock
+
+# サイズ
+defaults write com.apple.dock tilesize -int 41
+# 自動的に隠す
+defaults write com.apple.dock autohide -bool true
+killall Dock
+
+# Trackpad
+
+# タップでクリック
+defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
+# スクロール方向をナチュラルに
+defaults write NSGlobalDomain com.apple.swipescrolldirection -bool true
+# 軌跡の速さ
+defaults write -g com.apple.trackpad.scaling 2
 
 #
 # brew
