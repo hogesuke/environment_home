@@ -89,6 +89,7 @@ anyenv install nodenv
 #
 echo "/usr/local/bin/zsh" | sudo tee -a /etc/shells
 chsh -s /usr/local/bin/zsh
+git clone --recursive https://github.com/sorin-ionescu/prezto.git "~/.zprezto"
 # FIXME: プライベートリポジトリだから鍵をPCのローカルに置かないとgit cloneできない
 # git clone git@github.com:hogesuke/dotfiles_home.git ~/dotfiles_home
 # bash ~/dotfiles_home/link.sh
