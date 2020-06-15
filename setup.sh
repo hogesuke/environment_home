@@ -58,7 +58,8 @@ brew install git hub jq peco zsh colordiff coreutils openssl mysql cask
 # cask install
 brew cask install visual-studio-code google-chrome firefox dropbox \
                   alfred google-japanese-ime karabiner-elements bartender \
-                  clipy docker iterm2 simplecap licecap skitch inkscape gimp
+                  clipy docker iterm2 simplecap licecap skitch inkscape \
+                  gimp keychain direnv
 
 # ricty
 #
