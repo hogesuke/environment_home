@@ -62,14 +62,10 @@ brew cask install visual-studio-code google-chrome firefox dropbox \
                   gimp keychain direnv
 
 # ricty
-#
-# FIXME: 2020-05-30 インストール時にエラーが発生するためコメントアウト
-# 参考: https://qiita.com/tororu/items/60be4385853860c05fad
-#
-# brew tap sanemat/font
-# brew install ricty --with-powerline
-# cp -f /usr/local/opt/ricty/share/fonts/Ricty*.ttf ~/Library/Fonts/
-# fc-cache -vf
+brew tap sanemat/font
+brew install ricty --with-powerline
+cp -f /usr/local/opt/ricty/share/fonts/Ricty*.ttf ~/Library/Fonts/
+fc-cache -vf
 
 #
 # anyenv
