@@ -56,10 +56,10 @@ defaults write -g com.apple.trackpad.scaling 2
 brew install git hub jq peco zsh colordiff coreutils openssl mysql cask
 
 # cask install
-brew cask install visual-studio-code google-chrome firefox dropbox \
+brew install visual-studio-code google-chrome firefox dropbox \
                   alfred google-japanese-ime karabiner-elements bartender \
                   clipy docker iterm2 simplecap licecap skitch inkscape \
-                  gimp keychain direnv
+                  gimp keychain direnv --cask
 
 # ricty
 brew tap sanemat/font
